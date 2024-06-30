@@ -47,7 +47,7 @@ const Navbar = () => {
       {/* Right Side - Hidden on Small Screens */}
       <div className="hidden md:flex items-center justify-center space-x-3">
         <Link href="/login">Login</Link>
-        
+        <Link href="/login">Logout</Link>
       </div>
     </div>
   );
