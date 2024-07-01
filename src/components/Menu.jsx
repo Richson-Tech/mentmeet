@@ -2,16 +2,13 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { CgMenu } from "react-icons/cg";
 import { MdOutlineClose } from "react-icons/md";
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
 const links = [
   { id: 1, title: "Homepage", url: "/" },
-  { id: 2, title: "Investing", url: "/investing" },
-  { id: 4, title: "Earning", url: "/earning" },
-  { id: 4, title: "Learning", url: "/learning" },
+
 ];
 
 const Menu = () => {
@@ -37,8 +34,6 @@ const Menu = () => {
       )
     );
   };
-
-  const pathname = usePathname();
 
   return (
     <div>
