@@ -29,47 +29,8 @@ const Menu = () => {
         <div className="bg-white text-black absolute left-0 top-24 w-full h-[calc(100vh-6rem)] flex flex-col gap-8 pl-6 items-start justify-center text-3xl font-serif2 z-10">
           {links.map((item) => (
             <React.Fragment key={item.id}>
-              {item.title === "Investing" ? (
-                <div
-                  className="relative"
-                  onMouseEnter={handleInvestHover}
-                  onMouseLeave={handleInvestLeave}
-                >
-                  <p
-                    className="flex items-center cursor-pointer"
-                    onClick={handleInvestClick}
-                  >
-                    <span>{item.title}</span>
-                    {arrowIcon}
-                  </p>
-                  {showInvestDropdown && (
-                    <div className="absolute flex flex-col top-full left-0 bg-white text-black py-2 px-4 ">
-                      <Link href="/investing">
-                        <p
-                          className={`text-base font-serif ${
-                            pathname === "/investing" ? "text-[#79C947]" : ""
-                          }`}
-                        >
-                          Invest
-                        </p>
-                        <p className="text-sm text-[#767676] font-mono">
-                          Investment Account
-                        </p>
-                      </Link>
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <Link href={item.url} onClick={() => setOpen(false)}>
-                  <p
-                    className={`text-2xl font-serif ${
-                      pathname === item.url ? "text-[#79C947]" : ""
-                    }`}
-                  >
-                    {item.title}
-                  </p>
-                </Link>
-              )}
+             
+            
             </React.Fragment>
           ))}
         </div>
