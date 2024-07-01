@@ -30,11 +30,6 @@ const Navbar = () => {
       </div>
       <div className="hidden md:flex gap-4 flex-1 items-center justify-center">
         {/* Links */}
-        <Link href="/">Investing</Link>
-        <Link href="/banking">Banking</Link>
-        <Link href="/earning">Earning</Link>
-        <Link href="/learning">Learning</Link>
-        <Link href="/learning"></Link>
       </div>
       {/* Right Side - Visible on Small Screens */}
       <div className="md:hidden flex flex-row justify-center items-center space-x-3 pt-5 pb-5">
