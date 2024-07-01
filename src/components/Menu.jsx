@@ -16,24 +16,7 @@ const Menu = () => {
   const [showInvestDropdown, setShowInvestDropdown] = useState(false);
   const [arrowIcon, setArrowIcon] = useState(<IoMdArrowDropdown size={24} />);
 
-  const handleInvestHover = () => {
-    setShowInvestDropdown(true);
-  };
-
-  const handleInvestLeave = () => {
-    setShowInvestDropdown(false);
-  };
-
-  const handleInvestClick = () => {
-    setShowInvestDropdown(!showInvestDropdown);
-    setArrowIcon(
-      showInvestDropdown ? (
-        <IoMdArrowDropdown size={24} />
-      ) : (
-        <IoMdArrowDropup size={24} />
-      )
-    );
-  };
+ 
 
   return (
     <div>
