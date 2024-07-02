@@ -5,7 +5,11 @@ import Link from "next/link";
 import { CgMenu } from "react-icons/cg";
 import { MdOutlineClose } from "react-icons/md";
 
-const links = [{ id: 1, title: "Homepage", url: "/" }];
+const links = [
+  { id: 1, title: "Homepage", url: "/" },
+  { id: 2, title: "Explore", url: "/explore" },
+  { id: 3, title: "meet", url: "/meet" },
+];
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
