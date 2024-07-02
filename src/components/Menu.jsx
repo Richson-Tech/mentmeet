@@ -4,14 +4,11 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { CgMenu } from "react-icons/cg";
 import { MdOutlineClose } from "react-icons/md";
-import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
 const links = [{ id: 1, title: "Homepage", url: "/" }];
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
-  const [showInvestDropdown, setShowInvestDropdown] = useState(false);
-  const [arrowIcon, setArrowIcon] = useState(<IoMdArrowDropdown size={24} />);
 
   return (
     <div>
