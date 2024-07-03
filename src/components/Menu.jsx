@@ -9,6 +9,7 @@ const links = [
   { id: 1, title: "MentMeet", url: "/" },
   { id: 3, title: "Find Mentor", url: "/mentor" },
   { id: 2, title: "Explore", url: "/explore" },
+  { id: 2, title: "My Profile", url: "/profile" },
 ];
 
 const Menu = () => {
