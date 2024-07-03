@@ -7,8 +7,8 @@ import { MdOutlineClose } from "react-icons/md";
 
 const links = [
   { id: 1, title: "MentMeet", url: "/" },
+  { id: 3, title: "Find Mentor", url: "/mentor" },
   { id: 2, title: "Explore", url: "/explore" },
-  { id: 3, title: "meet", url: "/meet" },
 ];
 
 const Menu = () => {
